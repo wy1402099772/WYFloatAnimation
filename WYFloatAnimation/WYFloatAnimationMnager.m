@@ -14,7 +14,7 @@ static CGFloat const InitSpinAngle = 0.5;
 static CGFloat const PerSpinAngle = 0.0005;
 static NSUInteger const InitSpinCount = 5;
 static CGFloat const InitLineWidth = 4.f;
-static CGFloat const InitLineExtraHeight = 15.f;
+static CGFloat const InitLineExtraHeight = 10.f;
 static CGFloat const FakeAcclerateSpeedParam = 7;
 
 @interface WYFloatAnimationMnager ()

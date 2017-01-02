@@ -27,7 +27,7 @@
 - (void)changeImage {
     [UIView animateWithDuration:0.3
                      animations:^{
-                         self.displayImageView.frame = CGRectMake(self.frame.size.width / 2, self.frame.size.height / 2, 0, self.frame.size.height / 2);
+                         self.displayImageView.frame = CGRectMake(self.frame.size.width *0.4, self.frame.size.height / 2, self.frame.size.width *0.2, self.frame.size.height / 2);
                      }completion:^(BOOL finished) {
                          self.displayImageView.image = [UIImage imageNamed:[self randomImageName]];
                          [UIView animateWithDuration:0.3
