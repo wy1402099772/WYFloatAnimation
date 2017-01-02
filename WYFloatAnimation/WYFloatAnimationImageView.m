@@ -23,9 +23,28 @@
     return self;
 }
 
+#pragma mark - Public
+- (void)changeImage {
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         self.displayImageView.frame = CGRectMake(self.frame.size.width / 2, self.frame.size.height / 2, 0, self.frame.size.height / 2);
+                     }completion:^(BOOL finished) {
+                         self.displayImageView.image = [UIImage imageNamed:[self randomImageName]];
+                         [UIView animateWithDuration:0.3
+                                          animations:^{
+                                              self.displayImageView.frame = CGRectMake(0, self.frame.size.height / 2, self.frame.size.width, self.frame.size.height / 2);
+                                          }];
+                     }];
+}
+
 #pragma mark - Private
 - (void)configureView {
     [self addSubview:self.displayImageView];
+}
+
+- (NSString *)randomImageName {
+    NSInteger num = arc4random() % 10;
+    return [NSString stringWithFormat:@"test%ld.png", num];
 }
 
 #pragma mark - Getter
@@ -33,7 +52,7 @@
     if(!_displayImageView) {
         _displayImageView = [[UIImageView alloc] init];
         _displayImageView.frame = CGRectMake(0, self.frame.size.height / 2, self.frame.size.width, self.frame.size.height / 2);
-        _displayImageView.image = [UIImage imageNamed:@"text0.png"];
+        _displayImageView.image = [UIImage imageNamed:[self randomImageName]];
     }
     return _displayImageView;
 }

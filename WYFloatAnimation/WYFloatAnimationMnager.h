@@ -13,7 +13,10 @@
 
 - (instancetype)initWithAssoicatedView:(UIView *)associatedView;
 
+- (void)startAnimation;
 - (void)stopAnimation;
+
+- (void)changeImage;
 
 @property (nonatomic, assign) CGPoint hungPoint;
 @property (nonatomic, assign) CGSize  hungSize;

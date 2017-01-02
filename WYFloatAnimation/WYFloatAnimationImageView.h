@@ -10,4 +10,6 @@
 
 @interface WYFloatAnimationImageView : UIView
 
+- (void)changeImage;
+
 @end
