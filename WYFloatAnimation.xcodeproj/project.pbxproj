@@ -15,6 +15,9 @@
 		936CEC611E1A961E005DEE0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936CEC5F1E1A961E005DEE0A /* LaunchScreen.storyboard */; };
 		936CEC6C1E1A961E005DEE0A /* WYFloatAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936CEC6B1E1A961E005DEE0A /* WYFloatAnimationTests.m */; };
 		936CEC771E1A961E005DEE0A /* WYFloatAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936CEC761E1A961E005DEE0A /* WYFloatAnimationUITests.m */; };
+		936CEC861E1A9808005DEE0A /* WYFloatAnimationMnager.m in Sources */ = {isa = PBXBuildFile; fileRef = 936CEC851E1A9808005DEE0A /* WYFloatAnimationMnager.m */; };
+		936CEC891E1A9D88005DEE0A /* WYFloatAnimationImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 936CEC881E1A9D88005DEE0A /* WYFloatAnimationImageView.m */; };
+		936CEC8B1E1A9E56005DEE0A /* text0.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CEC8A1E1A9E56005DEE0A /* text0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		936CEC721E1A961E005DEE0A /* WYFloatAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYFloatAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		936CEC761E1A961E005DEE0A /* WYFloatAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYFloatAnimationUITests.m; sourceTree = "<group>"; };
 		936CEC781E1A961E005DEE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936CEC841E1A9808005DEE0A /* WYFloatAnimationMnager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYFloatAnimationMnager.h; sourceTree = "<group>"; };
+		936CEC851E1A9808005DEE0A /* WYFloatAnimationMnager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYFloatAnimationMnager.m; sourceTree = "<group>"; };
+		936CEC871E1A9D88005DEE0A /* WYFloatAnimationImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYFloatAnimationImageView.h; sourceTree = "<group>"; };
+		936CEC881E1A9D88005DEE0A /* WYFloatAnimationImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYFloatAnimationImageView.m; sourceTree = "<group>"; };
+		936CEC8A1E1A9E56005DEE0A /* text0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text0.png; path = ../../../../../Downloads/Resource/text0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				936CEC551E1A961E005DEE0A /* AppDelegate.m */,
 				936CEC571E1A961E005DEE0A /* ViewController.h */,
 				936CEC581E1A961E005DEE0A /* ViewController.m */,
+				936CEC841E1A9808005DEE0A /* WYFloatAnimationMnager.h */,
+				936CEC851E1A9808005DEE0A /* WYFloatAnimationMnager.m */,
+				936CEC871E1A9D88005DEE0A /* WYFloatAnimationImageView.h */,
+				936CEC881E1A9D88005DEE0A /* WYFloatAnimationImageView.m */,
+				936CEC8A1E1A9E56005DEE0A /* text0.png */,
 				936CEC5A1E1A961E005DEE0A /* Main.storyboard */,
 				936CEC5D1E1A961E005DEE0A /* Assets.xcassets */,
 				936CEC5F1E1A961E005DEE0A /* LaunchScreen.storyboard */,
@@ -247,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936CEC611E1A961E005DEE0A /* LaunchScreen.storyboard in Resources */,
+				936CEC8B1E1A9E56005DEE0A /* text0.png in Resources */,
 				936CEC5E1E1A961E005DEE0A /* Assets.xcassets in Resources */,
 				936CEC5C1E1A961E005DEE0A /* Main.storyboard in Resources */,
 			);
@@ -276,6 +290,8 @@
 				936CEC591E1A961E005DEE0A /* ViewController.m in Sources */,
 				936CEC561E1A961E005DEE0A /* AppDelegate.m in Sources */,
 				936CEC531E1A961E005DEE0A /* main.m in Sources */,
+				936CEC861E1A9808005DEE0A /* WYFloatAnimationMnager.m in Sources */,
+				936CEC891E1A9D88005DEE0A /* WYFloatAnimationImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +523,7 @@
 				936CEC7D1E1A961E005DEE0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		936CEC7E1E1A961E005DEE0A /* Build configuration list for PBXNativeTarget "WYFloatAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				936CEC801E1A961E005DEE0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		936CEC811E1A961E005DEE0A /* Build configuration list for PBXNativeTarget "WYFloatAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				936CEC831E1A961E005DEE0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
