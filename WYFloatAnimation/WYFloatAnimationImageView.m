@@ -27,14 +27,24 @@
 - (void)changeImage {
     [UIView animateWithDuration:0.3
                      animations:^{
-                         self.displayImageView.frame = CGRectMake(self.frame.size.width *0.4, self.frame.size.height / 2, self.frame.size.width *0.2, self.frame.size.height / 2);
+//                         self.displayImageView.frame = CGRectMake(self.frame.size.width *0.4, self.frame.size.height / 2, self.frame.size.width *0.2, self.frame.size.height / 2);
+                         CALayer *layer = self.displayImageView.layer;
+                         CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+                         rotationAndPerspectiveTransform.m34 = 1.0 / -500;
+                         rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform,90.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+                         layer.transform = rotationAndPerspectiveTransform;
                      }completion:^(BOOL finished) {
-                         self.displayImageView.image = [UIImage imageNamed:[self randomImageName]];
-                         [UIView animateWithDuration:0.3
+                         [UIView animateWithDuration:0.1
                                           animations:^{
-                                              self.displayImageView.frame = CGRectMake(0, self.frame.size.height / 2, self.frame.size.width, self.frame.size.height / 2);
+                                              self.displayImageView.image = [UIImage imageNamed:[self randomImageName]];
+                                              CALayer *layer = self.displayImageView.layer;
+                                              CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+                                              rotationAndPerspectiveTransform.m34 = 1.0 / -500;
+                                              rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, 0.f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+                                              layer.transform = rotationAndPerspectiveTransform;
                                           }];
                      }];
+
 }
 
 #pragma mark - Private
